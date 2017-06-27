@@ -110,7 +110,7 @@ fi
 ## add bitbucket and github keys to keychain so that i dont have run ssh-add every time
 ## i open shell
 ## https://wiki.archlinux.org/index.php/SSH_keys#Keychain
-eval $(keychain --eval --quiet id_rsa id_rsa_bb)
+eval $(keychain --eval --quiet id_rsa )
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -123,7 +123,7 @@ alias gcm="git commit -m"
 alias gp="git push"
 alias pbcopy="xclip -selection clipboard"
 alias pbpaste="xclip -selection clipboard -o"
-alias gse="git config user.email "patrick.motard@johnsonfit.com""
+alias gse="git config user.email "markstaebler@gmail.com""  
 alias restart="shutdown -r now"
 ## reload xresources
 alias xrl="xrdb ~/.Xresources"
